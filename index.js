@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-app.use(express.static('static'))
+app.use(express.static('/static'))
 app.all('/', (req, res) => {
     res.send("Just got a request!")
     res.send(tr10)
